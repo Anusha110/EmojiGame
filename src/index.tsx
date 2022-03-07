@@ -1,24 +1,25 @@
-import React, { Suspense } from 'react'
+import React from 'react'
+// , { Suspense }
 import ReactDOM from 'react-dom'
 
-import './Common/i18n'
+// import './Common/i18n'
 
 import * as serviceWorker from './serviceWorker'
-import App from './Common/routes/App'
-import LoadingView from './Common/LoadingWrapper/LoadingView'
+import App from './EmojiGame/routes/App'
+// import LoadingView from './Common/LoadingWrapper/LoadingView'
 
 import './index.css'
 
 ReactDOM.render(
-   <Suspense
-      fallback={
-         <div className='suspense-loading-view'>
-            <LoadingView />
-         </div>
-      }
-   >
-      <App />
-   </Suspense>,
+   // <Suspense
+   //    fallback={
+   //       <div className='suspense-loading-view'>
+   //          <LoadingView />
+   //       </div>
+   //    }
+   // >
+   <App />,
+   // </Suspense>,
    document.getElementById('root')
 )
 

@@ -1,9 +1,0 @@
-label > input {
-   visibility: hidden;
-   position: absolute;
-}
-
-.radioImage {
-   display: flex;
-   margin-right: 10px;
-}
